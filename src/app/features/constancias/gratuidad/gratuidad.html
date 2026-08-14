@@ -1,0 +1,230 @@
+
+
+<div class="container">
+
+    <div class="form-wrapper">
+
+        <h2 class="form-title">Constancia de Gratuidad</h2>
+
+        <p class="form-description">Complete los datos para generar la constancia de asesoría gratuita.</p>
+
+        <div class="section">
+
+            <div class="question">
+
+                <label class="question-label" for="correlativo">
+                    <!-- <span class="question-number">11</span> -->
+                    <span>Correlativo (Automático)</span>
+                    <span class="question-required">*</span>
+                </label>
+
+                <div class="question-content">
+
+                    <div class="question-input">
+                        <input type="text" class="text-input" placeholder="Número Correlativo" [(ngModel)]="correlativo" />
+                    </div>
+
+                </div>
+
+                <span class="question-message">El número correlativo se asigna automáticamente.</span>
+
+            </div>
+
+            <div class="question">
+
+                <label class="question-label" for="fechaEmision">
+                    <!-- <span class="question-number">11</span> -->
+                    <span>Fecha de Emisión</span>
+                    <span class="question-required">*</span>
+                </label>
+
+                <div class="question-content">
+
+                    <div class="question-input">
+                        <input type="date" class="text-input" [(ngModel)]="fechaEmision" disabled />
+                    </div>
+
+                </div>
+
+                <span class="question-message">Seleccione la fecha de emisión. (Fecha actual por default)</span>
+
+            </div>
+
+            <div class="question">
+
+                <label class="question-label">
+                    <!-- <span class="question-number">11</span> -->
+                    <span>Tesista 1</span>
+                    <span class="question-required">*</span>
+                </label>
+
+                <div class="question-content question-custom">
+
+                    <div class="question-input">
+                        <input type="text" class="text-input" placeholder="Nombres y Apellidos del Tesista" [(ngModel)]="tesista1" />
+                    </div>
+
+                    <div class="question-select">
+                        <select id="tesista1genero" class="text-input" [(ngModel)]="tesista1Genero">
+                            <option value="" disabled selected>Seleccione un género</option>
+                            <option value="H">Masculino</option>
+                            <option value="M">Femenino</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <span class="question-message">Ingrese los nombres y apellidos completos del tesista 1.</span>
+
+            </div>
+
+            <div class="question">
+
+                <label class="question-label" for="tesista2">
+                    <!-- <span class="question-number">11</span> -->
+                    <span>Tesista 2</span>
+                    <span class="question-required">*</span>
+                </label>
+
+                <div class="question-content question-custom">
+
+                    <div class="question-input">
+                        <input type="text" class="text-input" placeholder="Nombres y Apellidos del Tesista" [(ngModel)]="tesista2" />
+                    </div>
+
+                    <div class="question-select">
+                        <select id="tesista2genero" class="text-input" [(ngModel)]="tesista2Genero">
+                            <option value="" disabled selected>Seleccione un género</option>
+                            <option value="H">Masculino</option>
+                            <option value="M">Femenino</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <span class="question-message">Ingrese los nombres y apellidos completos del tesista 2.</span>
+
+            </div>
+
+            <div class="question">
+
+                <label class="question-label" for="fase1participacion">
+                    <!-- <span class="question-number">11</span> -->
+                    <span>Sede</span>
+                    <span class="question-required">*</span>
+                </label>
+
+                <div class="question-content">
+
+                    <div class="question-select">
+                        <select class="text-input" [(ngModel)]="sede" disabled>
+                            <option value="" disabled>Seleccione una sede</option>
+                            <option value="Chorrillos" selected>Chorrillos</option>
+                            <option value="San Borja">San Borja</option>
+                            <option value="Ica">Ica</option>
+                            <option value="Chincha">Chincha</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <span class="question-message">Seleccione la sede en la que se generó la presente constancia.</span>
+
+            </div>
+
+            <div class="question">
+
+                <label class="question-label" for="fase1participacion">
+                    <!-- <span class="question-number">11</span> -->
+                    <span>Escuela Profesional</span>
+                    <span class="question-required">*</span>
+                </label>
+
+                <div class="question-content">
+
+                    <div class="question-select">
+                        <select class="text-input" [(ngModel)]="carrera">
+                            <option value="" selected disabled >Seleccione una escuela profesional</option>
+                            <optgroup label="Ciencias de la Salud">
+                                <option value="1">Medicina Humana</option>
+                                <option value="2">Enfermería</option>
+                                <option value="3">Estomatología</option>
+                                <option value="4">Psicología</option>
+                                <option value="5">Tecnología Médica en Laboratorio Clínico y Anatomía Patológica</option>
+                                <option value="6">Tecnología Médica en Terapia Física y Rehabilitación</option>
+                                <option value="7">Medicina Veterinaria y Zootecnia</option>
+                            </optgroup>
+                            <optgroup label="Ingenierías">
+                                <option value="8">Ingeniería de Sistemas</option>
+                                <option value="9">Ingeniería Civil</option>
+                                <option value="10">Ingeniería Agroindustrial</option>
+                                <option value="11">Ingeniería en Enología y Viticultura</option>
+                            </optgroup>
+                            <optgroup label="Derecho y Ciencias Empresariales">
+                                <option value="12">Derecho</option>
+                                <option value="13">Contabilidad</option>
+                                <option value="14">Administración de Empresas</option>
+                                <option value="15">Administración y Negocios Internacionales</option>
+                                <option value="16">Administración y Marketing</option>
+                                <option value="17">Turismo, Hotelería y Gastronomía</option>
+                                <option value="18">Ciencias de la Comunicación</option>
+                            </optgroup>
+                        </select>
+                    </div>
+
+                </div>
+
+                <span class="question-message">Seleccione la escuela profesional a la que pertenece el tesista.</span>
+
+            </div>
+
+            <div class="question">
+
+                <label class="question-label" for="fase1participacion">
+                    <!-- <span class="question-number">11</span> -->
+                    <span>Título de la Tesis</span>
+                    <span class="question-required">*</span>
+                </label>
+
+                <div class="question-content">
+
+                    <div class="question-input">
+                        <input type="text" class="text-input" placeholder="Título de la Tesis" [(ngModel)]="titulo" />
+                    </div>
+
+                </div>
+
+                <span class="question-message">Ingrese el título completo de la tesis.</span>
+
+            </div>
+
+            <div class="campos"></div>
+
+            <div class="campos">
+                <ng-icon name="tablerExclamationCircle" size="25"></ng-icon>
+                <span>Al generar la constancia se creará el PDF y se guardará en el sistema.</span>
+            </div>
+
+            <div class="campos">
+
+                <div class="boton" (click)="enviarConstancia()">
+
+                    <p>Generar Constancia</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+</div>
+
+<div class="popup" *ngIf="url">
+
+    <embed *ngIf="url" [src]="url" type="application/pdf" width="100%" height="600px"/>
+
+</div>
+
