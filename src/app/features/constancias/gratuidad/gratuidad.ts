@@ -134,10 +134,10 @@ export class Gratuidad implements OnInit {
 
     testCampos() {
         this.correlativo = '001-2026-DGIRS-UPSJB';
-        this.tesista1 = 'Christian Aarón Mori Valdivia';
-        this.tesista1Genero = 'H';
-        this.tesista2 = 'Alexandra Fernanda Chipa Uzategui';
-        this.tesista2Genero = 'M';
+        this.tesista1 = 'Alexandra Fernanda Chipa Uzategui';
+        this.tesista1Genero = 'M';
+        this.tesista2 = 'Christian Aarón Mori Valdivia';
+        this.tesista2Genero = 'H';
         this.sede = 'Chorrillos';
         this.carrera = '8';
         this.titulo = 'Implementación de un Sistema Web para la Emisión de Constancias de Gratuidad en la Universidad Privada San Juan Bautista';

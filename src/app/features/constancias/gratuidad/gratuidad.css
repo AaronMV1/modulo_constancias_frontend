@@ -159,6 +159,9 @@
 
 }
 
+.question-titulo {
+    grid-area: 4 / 1 / 4 / 3;
+}
 
 .campos {
     display: flex;

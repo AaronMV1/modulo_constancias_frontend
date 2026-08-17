@@ -14,6 +14,10 @@ export const routes: Routes = [
             { path: '', pathMatch: 'full', redirectTo: 'formulario-constancia-gratuidad' },
             { path: 'formulario-constancia-gratuidad', component: Gratuidad },
         ]
+    },
+    {
+        path: '**',
+        redirectTo: 'private'
     }
 
 ];
